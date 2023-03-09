@@ -53,7 +53,9 @@ export default function ClippedDrawer() {
           <List>
             {['All mail', 'Trash', 'Spam'].map((text, index) => (
               <ListItem key={text} disablePadding>
-                <ListItemButton>
+                <ListItemButton
+                  sx={({ paddingTop: '0.75rem', paddingBottom: '0.75rem' })}
+                >
                   <ListItemIcon
                     sx={({
                       minWidth: 'max-content',
